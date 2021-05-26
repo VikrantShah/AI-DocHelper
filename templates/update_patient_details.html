@@ -1,0 +1,56 @@
+{% extends 'default_p.html' %}
+{% block title %}
+    Update Patient Details - 
+{% endblock title %}
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_default_p.css') }}" class="css">
+{% endblock css %}
+
+{% block content %}
+    <br>
+    <h2>
+        <b>
+            Update Patient Details
+        </b>
+    </h2>
+
+    <main class="form-style-text">
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="pname" name="pname" placeholder="name" value="{{ patient.pname }}">
+                <label for="pname">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="page" name="page" placeholder="age" value="{{ patient.page }}">
+                <label for="page">Age</label>
+            </div>
+            <div class="form-floating">
+                <select class="form-select" id="pgender" name="pgender" aria-label="Floating label select example">
+                    <option selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="pgender">Gender</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="pphno" name="pphno" placeholder="phno" value="{{ patient.pphno }}">
+                <label for="pphno">Phone Number</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="pemail" name="pemail" placeholder="email" value="{{ patient.pemail }}">
+                <label for="pemail">Email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="refer" name="refer" placeholder="refer" value="{{ patient.refer }}">
+                <label for="refer">Patient Was Referrenced By</label>
+            </div>
+            <div class="col-auto d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-dark mb-3">Update</button>
+            </div>
+        </form>
+    </main>
+
+
+{% endblock content %}

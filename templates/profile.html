@@ -1,0 +1,92 @@
+{% extends 'default_p.html' %}
+{% block title %}
+    Profile - 
+{% endblock title %}
+{% block css %}
+<style>
+    h2, h3 {
+        color: #D9E2EC;
+        text-align: center;
+    }
+
+    hr {
+        color: #D9E2EC;
+    }
+</style>
+{% endblock css %}
+
+{% block content %}
+<main class="form-style-text">
+    <form>
+        <br>
+
+        <table class="table table-dark table-hover" style="width:100%; align: center">
+            <h2><b>Account Details</b></h2>
+            <hr>
+            <tr>
+                <td scope="col">
+                    <h3>
+                        Name : 
+                    </h3>
+                </td>
+                <td scope="col">
+                    <h3>
+                        {{ current_user.pname }}
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td scope="col">
+                    <h3>
+                        Email : 
+                    </h3>
+                </td>
+                <td scope="col">
+                    <h3>
+                        {{ current_user.email }}
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td scope="col">
+                    <h3>
+                        Password : 
+                    </h3>
+                </td>
+                <td scope="col">
+                    <h3>
+                        ************* 
+                        <a href="{{ url_for('reset_password') }}" type="button" class="btn btn-dark btn-outline-light btn-sn mx-1">Reset Password</a>
+                    </h3>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="col">
+                    <h3>
+                        Security Question : 
+                    </h3>
+                </td>
+                <td scope="col">
+                    <h3>
+                        {{ current_user.sec_ques }}
+                    </h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td scope="col">
+                    <h3>
+                        Phone Number : 
+                    </h3>
+                </td>
+                <td scope="col">
+                    <h3>
+                        {{ current_user.phone }}
+                    </h3>
+                </td>
+            </tr>
+        </table>
+    </form>
+</main>
+{% endblock content %}

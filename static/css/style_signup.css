@@ -1,0 +1,112 @@
+
+.left {
+    height: 100%;
+    width: 100%;
+    background-color: #102A43;
+    color: #BCCCDC;
+}
+
+.right {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: #D9E2EC;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+    /* Style the image inside the centered container, if needed */
+    .centered img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+.form-signup {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    margin: auto;
+   
+}
+
+.form-signup .form-floating:focus-within {
+        z-index: 2;
+      }
+
+    .form-signup input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        background-color: #212121;
+        color: #D9E2EC;
+    }
+
+    .form-signup input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #212121;
+        color: #D9E2EC;
+    }
+
+    .form-signup input[type="text"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #212121;
+        color: #D9E2EC;
+    }
+
+    .form-signup input[type="number"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #212121;
+        color: #D9E2EC;
+    }
+
+    .form-signup select {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #212121;
+        color: #D9E2EC;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:active,
+    input:-webkit-autofill:focus {
+        background-color: #212121 !important;
+        color: #D9E2EC !important;
+        -webkit-box-shadow: 0 0 0 1000px #212121 inset !important;
+        -webkit-text-fill-color: #D9E2EC !important;
+    }
+    
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #D9E2EC;
+    text-align: center;
+    
+}
+
+a {
+    color: #102A43;
+    text-decoration: underline;
+}
+    
+
+
+.btn-dark {
+    color: #D9E2EC;
+    background-color: #102A43;
+    border-color: #D9E2EC;
+}

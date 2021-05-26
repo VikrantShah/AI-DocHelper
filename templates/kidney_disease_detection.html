@@ -1,0 +1,94 @@
+{% extends 'default_p.html' %}
+{% block title %}
+    Kidney Disease Detection -
+{% endblock title %}
+
+{% block content %}
+<br>
+<h1>
+    <b>
+        KIDNEY DISEASE DETECTION
+    </b>
+</h1>
+
+<main class="form-style-text">
+    <form method="POST">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="pname" name="pname" placeholder="pname">
+            <label for="pname">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="page" name="page" placeholder="page">
+            <label for="page">Age</label>
+        </div>
+        <div class="form-floating">
+            <select class="form-select" id="pgender" aria-label="Floating label select example" name="pgender">
+                <option selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="pgender">Gender</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="pphno" name="pphno" placeholder="pphno">
+            <label for="pphno">Phone Number</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="pemail" name="pemail" placeholder="pemail">
+            <label for="pemail">Email</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            
+            <input class="form-control" type="number" id="bp" name="bp" required="required" placeholder="Blood Pressure">
+            <label for="bp">Blood Pressure</label>
+            
+        </div>
+
+        <div class="form-floating mb-3">
+            
+            <input class="form-control" type="number" step="any" id="sg" name="sg" required="required" placeholder="Specific Gravity">
+            <label for="sg">Specific Gravity</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            
+            <input class="form-control" type="number" id="al" name="al" required="required" placeholder="Albumin">
+            <label for="al">Albumin</label>
+        </div>
+
+        <div class="form-floating mb-3">
+        
+            <input class="form-control" type="number" id="su" name="su" required="required" placeholder="Blood Sugar Level">
+            <label for="su">Blood Sugar Level</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            
+            <input class="form-control" type="number" id="rbc" name="rbc" required="required" placeholder="Red Blood Cells Count">
+            <label for="rbc">Red Blood Cells Count</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            
+                <input class="form-control" type="number" id="pc" name="pc" required="required" placeholder="Pus Cell Count">
+                <label for="pc">Pus Cell Count</label>
+              
+        </div>
+
+        <div class="form-floating mb-3">
+            
+                <input class="form-control" type="number" id="pcc" name="pcc" required="required" placeholder="Pus Cell Clumps">
+                <label for="pcc">Pus Cell Clumps</label>
+              
+        </div>
+
+
+        
+        <div class="col-auto d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-dark mb-3">Submit</button>
+        </div>
+    </form>
+</main>
+{% endblock content %}

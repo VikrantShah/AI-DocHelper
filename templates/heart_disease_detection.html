@@ -1,0 +1,110 @@
+{% extends 'default_p.html' %}
+{% block title %}
+    Heart Disease Detection -
+{% endblock title %}
+
+{% block content %}
+<br>
+<h1>
+    <b>
+        HEART DISEASE DETECTION
+    </b>
+</h1>
+
+<main class="form-style-text">
+    <form method="POST" enctype="multipart/form-data">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="pname" name="pname" placeholder="pname">
+            <label for="pname">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="page" name="page" placeholder="page">
+            <label for="page">Age</label>
+        </div>
+        <div class="form-floating">
+            <select class="form-select" id="pgender" aria-label="Floating label select example" name="pgender">
+                <option selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="pgender">Gender</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="pphno" name="pphno" placeholder="pphno">
+            <label for="pphno">Phone Number</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="pemail" name="pemail" placeholder="pemail">
+            <label for="pemail">Email</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="refer" name="refer" placeholder="refer">
+            <label for="refer">Patient Was Referrenced By</label>
+        </div>
+
+        <div class="form-floating">
+            <select class="form-select" id="cp" name="cp" aria-label="Floating label select example">
+                <option selected> Select Chest Pain Type</option>
+                <option value="1">Typical Angina</option>
+                  <option value="2">Atypical Angina</option>
+                  <option value="3">Non-Anginal Pain</option>
+                  <option value="4">Asymptomatic</option>
+            </select>
+            <label for="cp">Chest Pain Type</label>
+            
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="trestbps" name="trestbps" placeholder="Resting Blood Pressure">
+            <label for="trestbps">Resting Blood Pressure (in mm Hg)</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="sch" name="sch" placeholder="sch">
+            <label for="sch">Serum Cholestroal in mg/dl</label>
+        </div>
+
+        <div class="form-floating">
+            <select class="form-select" id="fbs" name="fbs" aria-label="Floating label select example">
+                <option selected> Select Fasting Blood Sugar</option>
+                <option value="0">Fasting Blood Sugar < 120 mg/dl</option>
+                <option value="1">Fasting Blood Sugar > 120 mg/dl</option>
+            </select>
+            <label for="fbs">Fasting Blood Sugar</label>
+            
+        </div>
+
+        <div class="form-floating">
+            <select class="form-select" id="restecg" name="restecg" aria-label="Floating label select example">
+                <option selected>Select Resting Electro-cardiographic Result</option>
+                <option value="0">Normal</option>
+                <option value="1">Having ST-T wave abnormality</option>
+                <option value="2">Showing probable or definite left ventricular hypertrophy</option>
+            </select>
+            <label for="restecg">Resting Electro-cardiographic Result</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="mh" name="mh" placeholder="mh">
+            <label for="mh">Maximum Heart Rate Achieved Exercise induced angina</label>
+        </div>
+
+        <div class="form-floating">
+            <select class="form-select" id="exang" name="exang" aria-label="Floating label select example">
+                <option selected>Select Exercise Induced Angina</option>
+                <option value="1">Yes</option>
+                  <option value="0">No</option>
+            </select>
+            <label for="exange">Exercise Induced Angina</label>
+        </div>
+
+
+
+        <div class="col-auto d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-dark mb-3">Submit</button>
+        </div>
+    </form>
+</main>
+{% endblock content %}

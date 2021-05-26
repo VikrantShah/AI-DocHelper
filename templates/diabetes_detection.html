@@ -1,0 +1,82 @@
+{% extends 'default_p.html' %}
+
+
+{% block content %}
+    <br>
+    <h1>
+        <b>
+            DIABETES DETECTION
+        </b>
+    </h1>
+
+    <main class="form-style-text">
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="pname" name="pname" placeholder="pname">
+                <label for="pname">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="page" name="page" placeholder="page">
+                <label for="page">Age</label>
+            </div>
+            <div class="form-floating">
+                <select class="form-select" id="pgender" aria-label="Floating label select example" name="pgender">
+                    <option selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="pgender">Gender</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="pphno" name="pphno" placeholder="pphno">
+                <label for="pphno">Phone Number</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="pemail" name="pemail" placeholder="pemail">
+                <label for="pemail">Email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="refer" name="refer" placeholder="refer">
+                <label for="refer">Patient Was Referrenced By</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="pr" name="pr" placeholder="pr">
+                <label for="pr">Pregancies</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="GL" name="GL" placeholder="GL">
+                <label for="GL">Glocose</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="BP" name="BP" placeholder="BP">
+                <label for="BP">Blood Pressure</label>
+            </div>
+
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="bmi" name="bmi" placeholder="bmi">
+                <label for="bmi">BMI</label>
+            </div>
+
+
+            <div class="form-floating">
+                <select class="form-select" id="DPF" name="DPF" aria-label="Floating label select example">
+                    <option selected>Diabetes Pedigree Function</option>
+                    <option value=0>0</option>
+                    <option value=1>1</option>
+
+                </select>
+                <label for="DPF">Diabetes Pedigree Function</label>
+            </div>
+
+            <div class="col-auto d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-dark mb-3">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    {% endblock content %}
