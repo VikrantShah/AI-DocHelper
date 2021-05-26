@@ -23,7 +23,7 @@
             <img src="{{ url_for('static', filename='images/icon_navbar.png') }}" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
             <b>AI-DocHelper</b>
         </a>
-
+<!--
         <nav class="navbar navbar-light navbar-expand-sm" style=" background-color: #102A43; margin-right:50px">
             <form class="d-flex">
                 <input class="form-control mx-2 my-2 mr-sm-9 " type="search" placeholder="Search" aria-label="Search">
@@ -31,22 +31,26 @@
 
 
             </form>
+            -->
             
             {% if current_user.is_authenticated %}
-                <div class="dropdown">
+                <div class="dropdown mx-2 my-2 my-sm-2 btn-right">
                     <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Profile
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li><a class="dropdown-item" href="{{ url_for('profile') }}">My Profile</a></li>
                     <li><a class="dropdown-item" href="{{ url_for('patient_details') }}">Patient Details</a></li>
-                    <li><a class="dropdown-item" href="{{ url_for('sign_out') }}">Sign Out</a></li>
+                    <!-- <li><a class="dropdown-item" href="{{ url_for('sign_out') }}">Sign Out</a></li> -->
                     </ul>
+                    
+                    <a class="btn btn-dark mx-2 my-2 my-sm-2 btn-right" href="{{ url_for('sign_out') }}" role="button">Sign Out</a>
                 </div>
             {% else %}
+            <div>
                 <a class="btn btn-dark mx-2 my-2 my-sm-2" href="{{ url_for('sign_in') }}" role="button">SignIn</a>
                 <a class="btn btn-dark mx-2 my-2 my-sm-2" href="{{ url_for('sign_up') }}" role="button">SignUp</a>
-
+            </div>
             {% endif %}
         </nav>
     </nav>
