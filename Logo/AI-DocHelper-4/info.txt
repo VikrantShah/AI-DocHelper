@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Mothproof_Script
+font link: https://www.fontsquirrel.com/fonts/MothproofScript
+font author: 
+font author site: 
+
+
+icon designer: Creative Stall
+icon designer link: /creativestall
+        
+
+fontColor: {"hex":"#BCCCDC"}
+bgColor: {"hex":"#102A43"}
+iconColor: {"hex":"#BCCCDC"}
+
+      
