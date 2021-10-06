@@ -1,0 +1,94 @@
+*Container Specifications :-*
+
+*Container Background Color :*
+#102A43
+
+*Container Text Color :*
+#D9E2EC
+*#BCCCDC* (Finalized Color)
+#9FB3C8
+#829AB1
+
+*Hover Effect Color :*
+#627D98
+
+*Container Dropdown Color :*
+#486581
+#334E68
+
+*Background Color Of Search Button :*
+#243B53
+
+
+*Note :*
+1) These specifications will remain the same for the *Dark* and *Light* Mode.
+2) If multiple colors are present, we will try all one by one on the UI and decide which pleases the most to the eyes.
+3) *Hover Effect Color (#627D98)* remains the same for the whole webpage.
+
+
+------------------------------------------------
+
+*Dark Mode Specifications :-*
+
+*Background Color :*
+#212121
+#121212
+
+*Text Color :*
+#FAFAFA
+#F7F7F7
+
+*Text Box Placeholder Color :*
+*Text Color* that is rejected. 
+For example, If we have selected the text color as #F7F7F7, then the *Text Box Placeholder Color* will be #FAFAFA or vice versa.
+
+*Text Box Background Color :*
+#515151
+#626262
+
+*Hover Effect Color :*
+#627D98
+
+*Button / Hyperlink Text Color :*
+Same as *Container Text Color*.
+
+*Button Background Color :*
+Same as *Container Background Color* i.e. #102A43
+
+*Note :*
+1) If multiple colors are present, we will try all one by one on the UI and decide which pleases the most to the eyes.
+2) *Hover Effect Color (#627D98)* remains the same for the whole webpage.
+
+
+------------------------------------------------
+
+*Light Mode Specifications :-*
+
+*Background Color :*
+#FAFAFA
+#F7F7F7
+
+*Text Color :*
+#212121
+#121212
+
+*Text Box Placeholder Color :*
+*Text Color* that is rejected. 
+For example, If we have selected the text color as #212121, then the *Text Box Placeholder Color* will be #121212 or vice versa.
+
+*Text Box Background Color :*
+#E0E0E0
+#B1B1B1
+
+*Hover Effect Color :*
+#627D98
+
+*Button / Hyperlink Text Color :*
+Same as *Container Text Color*.
+
+*Button Background Color :*
+Same as *Container Background Color* i.e. #102A43
+
+*Note :*
+1) If multiple colors are present, we will try all one by one on the UI and decide which pleases the most to the eyes.
+2) *Hover Effect Color (#627D98)* remains the same for the whole webpage.
